@@ -1,5 +1,51 @@
-$dgColor:red;
+@use 'hero';
+@use 'shows';
+@use 'header';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+// $colorTextPrimary: #f9f9f9;
+// $colorTextSecondary: #cacaca;
+
+// @mixin text($fontSize:16px) {
+//     font-size: $fontSize;
+//     line-height: $fontSize + 10px;
+// }
+
+// .text--big {
+//     @include text(20px);
+// }
+
+// .text {
+//     @include text;
+//     color: $colorTextSecondary;
+// }
+
+// .text--small {
+//     @include text(12px);
+// }
 
 body {
-    background-color: $dgColor;
+    background-image: url(/assets/images/Mulan_background.JPEG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
+.container {
+    background-image: radial-gradient(farthest-side at 73% 21%, transparent, rgb(26, 29, 41));
+    height: 100%;
+}
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+.header {
+    position: fixed;
+    z-index: 1;
+
+    &__logo {
+        max-width: 100px;
+        width: 100%;
+        padding: 16px 18px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        transition: 3s ease-out;
+
+        &:hover {
+            background-color: rgb(26, 29, 41);
+            transition: .5s ease;
+        }
+
+    }
+
+    &__links {
+        display: flex;
+        list-style: none;
+        font-weight: 700;
+        align-items: center;
+        letter-spacing: 1px;
+        padding: 16px 18px;
+
+        &__item a {
+            display: flex;
+            text-decoration: none;
+            padding: 0 32px;
+
+            &:hover p {
+                border-bottom: 4px solid #f9f9f9;
+                transition: all;
+            }
+
+            i {
+                padding-right: 8px;
+            }
+        }
+    }
+
+
+}

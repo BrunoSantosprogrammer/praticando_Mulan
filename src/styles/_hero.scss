@@ -1,0 +1,122 @@
+.hero {
+    padding: 2vw 5.6vw;
+    
+    &__container {
+
+        &__branding {
+            max-width: 341px;
+            min-width: 100px;
+            width: 35vw;
+            padding: 56px 0 32px;
+        }
+
+        &__classification {
+            display: flex;
+            margin-right: 4px;
+            font-size: 16px;
+
+
+            & img {
+                height: 32px;
+                padding-right: 16px;
+                padding-bottom: 16px;
+            }
+        }
+
+        p {
+            color: #f9f9f9;
+            font-size: 16px;
+        }
+    }
+}
+
+.buttons {
+    display: flex;
+    margin-top: 32px;
+    height: 52px;
+
+    &__links {
+        display: flex;
+        font-weight: 900;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 15px;
+        cursor: pointer;
+        outline: none;
+        align-items: center;
+
+        &__play {
+            background-color: #f9f9f9;
+            color: #0e0b14;
+            padding: 16px 24px;
+            border: 10px;
+            border-radius: .25rem;
+
+            &:hover {
+                transition: all .1s ease-out;
+                opacity: .7;
+            }
+        }
+
+        &__trailer {
+            background-color: rgba(0, 0, 0, .5);
+            color: #f9f9f9;
+            border: 1px solid #f9f9f9;
+            margin-left: 18px;
+            margin-right: 18px;
+            padding: 16px 24px;
+            border-radius: .25rem;
+            transition: all .5s ease-out;
+
+            &:hover {
+                background-color: #f9f9f9;
+                color: #0e0b14;
+            }
+        }
+
+        &__list {
+            font-size: 42px;
+            color: #f9f9f9;
+
+            &:hover {
+                color: #0e0b14;
+                transition: all .5s ease-out;
+            }
+        }
+    }
+}
+
+.trailer {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    backdrop-filter: blur(20px);
+
+    video {
+        height: 500px;
+    }
+
+}
+
+.trailer.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.trailer .close {
+    position: absolute;
+    cursor: pointer;
+    max-width: 32px;
+    filter: invert(1);
+    top: 30px;
+    right: 30px;
+    max-width: 32px;
+}
