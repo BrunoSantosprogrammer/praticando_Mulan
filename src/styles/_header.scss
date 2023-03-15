@@ -12,10 +12,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        transition: all 2s ease-in-out;
 
         &:hover {
             background-color: rgb(26, 29, 41);
-            transition: .5s ease;
+            transition:all 1s ease;
         }
 
     }
@@ -32,10 +33,11 @@
             display: flex;
             text-decoration: none;
             padding: 0 32px;
+            text-transform: uppercase;
+            border-bottom: 2px solid transparent;
 
             &:hover p {
-                border-bottom: 4px solid #f9f9f9;
-                transition: all;
+                border-bottom: 2px solid #f9f9f9;
             }
 
             i {
