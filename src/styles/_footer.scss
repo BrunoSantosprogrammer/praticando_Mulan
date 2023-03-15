@@ -1,0 +1,34 @@
+.footer {
+    background-color: #0e0b14;
+    padding: 28px;
+
+    &__Container {
+        max-width: px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__logo {
+        height: 36px;
+        margin: 10px auto 10px;
+    }
+
+    &__links {
+        margin-bottom: 16px;
+
+        &__item {
+            display: inline-block;
+
+            a {
+                padding: 8px 16px;
+                display: block;
+            }
+        }
+    }
+
+    p {
+        margin: 8px 28px;
+    }
+
+}

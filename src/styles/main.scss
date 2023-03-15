@@ -1,3 +1,4 @@
+@use 'footer';
 @use 'hero';
 @use 'shows';
 @use 'header';
@@ -11,26 +12,10 @@
     list-style: none;
 }
 
-// $colorTextPrimary: #f9f9f9;
-// $colorTextSecondary: #cacaca;
+$colorTextPrimary: #f9f9f9;
+$colorTextSecondary:#f9f9f9;
+$colorTextSmall: #cacaca;
 
-// @mixin text($fontSize:16px) {
-//     font-size: $fontSize;
-//     line-height: $fontSize + 10px;
-// }
-
-// .text--big {
-//     @include text(20px);
-// }
-
-// .text {
-//     @include text;
-//     color: $colorTextSecondary;
-// }
-
-// .text--small {
-//     @include text(12px);
-// }
 
 body {
     background-image: url(/assets/images/Mulan_background.JPEG);
@@ -44,6 +29,25 @@ body {
     height: 100%;
 }
 
+@mixin text($fontSize:16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+}
+
+.text--big {
+    @include text(20px);
+    color:$colorTextPrimary;
+}
+
+.text {
+    @include text;
+    color: $colorTextSecondary;
+}
+
+.text--small {
+    @include text(12px);
+    color:$colorTextSmall;
+}
 
 
 

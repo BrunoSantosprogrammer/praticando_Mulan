@@ -1,19 +1,17 @@
 .header {
     position: fixed;
     z-index: 1;
+    background-color:transparent;
 
     &__logo {
-        max-width: 100px;
-        width: 100%;
-        padding: 16px 18px;
+        height: 36px;
+        padding-left: 36px;
     }
 
     &__container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: transparent;
-        transition: 3s ease-out;
 
         &:hover {
             background-color: rgb(26, 29, 41);

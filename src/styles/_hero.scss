@@ -22,11 +22,6 @@
                 padding-bottom: 16px;
             }
         }
-
-        p {
-            color: #f9f9f9;
-            font-size: 16px;
-        }
     }
 }
 
@@ -72,15 +67,27 @@
                 background-color: #f9f9f9;
                 color: #0e0b14;
             }
+
         }
 
         &__list {
             font-size: 42px;
             color: #f9f9f9;
+            display: flex;
+            align-items: center;
+
+            p {
+                padding-left: 8px;
+                display: none;
+            }
 
             &:hover {
                 color: #0e0b14;
-                transition: all .5s ease-out;
+                transition: all .8s ease-out;
+
+                p {
+                    display: flex;
+                }
             }
         }
     }
