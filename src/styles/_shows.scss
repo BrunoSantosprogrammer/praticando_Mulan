@@ -1,6 +1,12 @@
 .shows {
     padding: 2vw 5.6vw;
 
+    @media (max-width: 768px) {
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+    }
+
     &__list {
         display: none;
         grid-template-columns: 1fr 1fr 1fr;
@@ -10,6 +16,13 @@
 
         &--is-active {
             display: grid;
+
+            @media (max-width: 768px) {
+                grid-template-columns: 1fr 1fr;
+                gap: 0;
+                margin-top: 0;
+                padding-bottom:0;
+            }
         }
 
         &__item {
@@ -25,6 +38,10 @@
             img {
                 border-radius: 4px;
                 max-width: 100%;
+
+                @media (max-width:768px) {
+                    height: 56px;
+                }
             }
 
             h4 {
@@ -44,6 +61,7 @@
 
         &__duration {
             padding: 50% 20px;
+
             img {
                 height: 20px;
             }
@@ -56,6 +74,10 @@
 
     &__tabs {
         display: flex;
+
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
 
         &__buttons {
             font-weight: 600;

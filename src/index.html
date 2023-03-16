@@ -11,236 +11,234 @@
 </head>
 
 <body>
-    <div class="container">
-        <!-- Page header -->
-        <header class="header">
-            <div class="header__container">
-                <h1>
-                    <a href="#">
-                        <img class="header__logo" src="/assets/images/disneyplus.svg" alt="Disney">
+    <!-- Page header -->
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <a href="#">
+                    <img class="header__logo" src="/assets/images/disneyplus.svg" alt="Disney">
+                </a>
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a class="text" href="#">
+                        <span><i class="bi bi-house-door"></i></span>
+                        <p>Início</p>
                     </a>
-                </h1>
-                <ul class="header__links">
-                    <li class="header__links__item">
-                        <a class="text" href="#">
-                            <span><i class="bi bi-house-door"></i></span>
-                            <p>Início</p>
-                        </a>
-                    </li>
-                    <li class="header__links__item">
-                        <a class="text" href="#">
-                            <span> <i class="bi bi-search"></i></span>
+                </li>
+                <li class="header__links__item">
+                    <a class="text" href="#">
+                        <span> <i class="bi bi-search"></i></span>
                         <p>Pesquisa</p>
+                    </a>
+                </li>
+                <li class="header__links__item">
+                    <a class="text" href="#">
+                        <span><i class="bi bi-plus"></i></span>
+                        <p>Minha Lista</p>
+                    </a>
+                </li>
+                <li class="header__links__item">
+                    <a class="text" href="#">
+                        <span><i class="bi bi-star-fill"></i></span>
+                        <p>Originais</p>
+                    </a>
+                </li>
+                <li class="header__links__item">
+                    <a class="text" href="#">
+                        <span><i class="bi bi-film pb-5"></i></span>
+                        <p>Filmes</p>
+                    </a>
+                </li>
+                <li class="header__links__item">
+                    <a class="text" href="#">
+                        <span><i class="bi bi-camera-reels-fill"></i></span>
+                        <p>Séries</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- Hero section  -->
+    <section class="hero">
+        <div class="hero__container">
+            <div>
+                <img class="hero__container__branding" src="/assets/images/Disney_Mulan.png" alt="Disney Mulan" />
+            </div>
+            <div class="hero__container__classification">
+                <img src="/assets/images/12anos.png" alt="Faixa etária 12 anos">
+                <img src="/assets/images/Audio descrição.png" alt="Áudio e descrição">
+                <img src="/assets/images/CC.png" alt="Legendas">
+                <span class="text--small">2020 | • 1h 58min</span>
+            </div>
+            <p class="text--small">Drama, De adolescente a adulto, Fantasia, Ação e aventura</p><br>
+            <p class="text">Em "Mulan", da Disney, uma jovem destemida arrisca tudo pelo <br>
+                amor à sua família e ao seu país,
+                tornando-se uma das maiores <br>
+                guerreiras da história da China.</p>
+            <div>
+                <ul class="buttons">
+                    <li class="buttons__links">
+                        <a class="buttons__links__play" href="#">
+                            <i class="bi bi-play-fill"></i>
+                            Assistir
                         </a>
                     </li>
-                    <li class="header__links__item">
-                        <a class="text" href="#">
-                            <span><i class="bi bi-plus"></i></span>
-                            <p>Minha Lista</p>
+                    <li class="buttons__links">
+                        <a class="play buttons__links__trailer" onclick="toggleVideo()" href="#">
+                            Trailer
                         </a>
                     </li>
-                    <li class="header__links__item">
-                        <a class="text" href="#">
-                            <span><i class="bi bi-star-fill"></i></span>
-                            <p>Originais</p>
-                        </a>
-                    </li>
-                    <li class="header__links__item">
-                        <a class="text" href="#">
-                            <span><i class="bi bi-film pb-5"></i></span>
-                            <p>Filmes</p>
-                        </a>
-                    </li>
-                    <li class="header__links__item">
-                        <a class="text" href="#">
-                            <span><i class="bi bi-camera-reels-fill"></i></span>
-                            <p>Séries</p>
+                    <li class="buttons__links">
+                        <a class="buttons__links__list " href="#">
+                            <i class="bi bi-plus-circle"></i>
+                            <p class="text">Minha Lista</p>
                         </a>
                     </li>
                 </ul>
             </div>
-        </header>
-        <!-- Hero section  -->
-        <section class="hero">
-            <div class="hero__container">
-                <div>
-                    <img class="hero__container__branding" src="/assets/images/Disney_Mulan.png" alt="Disney Mulan" />
-                </div>
-                <div class="hero__container__classification">
-                    <img src="/assets/images/12anos.png" alt="Faixa etária 12 anos">
-                    <img src="/assets/images/Audio descrição.png" alt="Áudio e descrição">
-                    <img src="/assets/images/CC.png" alt="Legendas">
-                    <span class="text--small">2020 | • 1h 58min</span>
-                </div>
-                <p class="text--small">Drama, De adolescente a adulto, Fantasia, Ação e aventura</p><br>
-                <p class="text">Em "Mulan", da Disney, uma jovem destemida arrisca tudo pelo <br>
-                    amor à sua família e ao seu país,
-                    tornando-se uma das maiores <br>
-                    guerreiras da história da China.</p>
-                <div>
-                    <ul class="buttons">
-                        <li class="buttons__links">
-                            <a class="buttons__links__play" href="#">
-                                <i class="bi bi-play-fill"></i>
-                                Assistir
-                            </a>
-                        </li>
-                        <li class="buttons__links">
-                            <a class="play buttons__links__trailer" onclick="toggleVideo()" href="#">
-                                Trailer
-                            </a>
-                        </li>
-                        <li class="buttons__links">
-                            <a class="buttons__links__list " href="#">
-                                <i class="bi bi-plus-circle"></i>
-                                <p class="text">Minha Lista</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="trailer">
-                    <video src="/assets/images/videos/Mulan _ Trailer Oficial Dublado _ Disney+_Full-HD.mp4"
-                        controls="true"></video>
-                    <img src="/assets/images/close.webp" class="close" onclick="toggleVideo()">
-                </div>
+            <div class="trailer">
+                <video src="/assets/images/videos/Mulan _ Trailer Oficial Dublado _ Disney+_Full-HD.mp4"
+                    controls="true"></video>
+                <img src="/assets/images/close.webp" class="close" onclick="toggleVideo()">
             </div>
-        </section>
-        <!-- Shows section -->
-        <section class="shows">
-            <nav class="shows__tabs">
-                <button data-tab-button="Sugestoes"
-                    class="shows__tabs__buttons shows__tabs__buttons--is-active text--big">Sugestões</button>
-                <button data-tab-button="extras" class="shows__tabs__buttons text--big">Extras</button>
-                <button data-tab-button="detalhes" class="shows__tabs__buttons text--big">Detalhes</button>
-            </nav>
-            <ul data-tab-id="Sugestoes" class="shows__list shows__list--is-active ">
-                <li class="shows__list__item">
-                    <img src="/assets/images/suggestions/Rei leão.jfif" alt="Rei Leão">
-                </li>
-                <li class="shows__list__item">
-                    <img src="/assets/images/suggestions/Cinderela.jfif" alt="Cinderela">
-                </li>
-                <li class="shows__list__item">
-                    <img src="/assets/images/suggestions/A bela e a Fera.jfif" alt="A Bela e a Fera">
-                </li>
-                <li class="shows__list__item">
-                    <img src="/assets/images/suggestions/Aladdin.jfif" alt="Aladdin">
-                </li>
-                <li class="shows__list__item">
-                    <img src="/assets/images/suggestions/Mogli - O menino lobo.jfif" alt="Mogli - O menino lobo">
-                </li>
-                <li class="shows__list__item">
-                    <img src="/assets/images/suggestions/Mulan.jfif" alt="Mulan">
-                </li>
-            </ul>
-            <ul data-tab-id="extras" class="shows__list">
-                <li class="shows__list__item">
-                    <img src="/assets/images/extras/Mulan_trailer.jfif" alt="Trailer Mulan">
-                    <h4 class="text">Mulan Trailer</h4>
-                    <p class="text--small">
-                        Trailer do filme em inglês
-                    </p>
-                </li>
-                <li class="shows__list__item">
-                    <img src="/assets/images/extras/Music_Mulan.jfif" alt="Música Mulan">
-                    <h4 class="text">"Loyal Brave True"</h4>
-                    <p class="text--small">
-                        Música oficial com Christina Aguilera
-                    </p>
-                </li>
-                <li class="shows__list__item">
-                    <img src="/assets/images/extras/filming.jfif" alt="Filmagens">
-                    <h4 class="text">Bastidores</h4>
-                    <p class="text--small">
-                        Veja a preparação dos atores Jason Scoott Lee e Li Gong
-                    </p>
-                </li>
-                <li class="shows__list__item">
-                    <img src="/assets/images/extras/Music_Mulan2.jfif" alt="Música 2 de Mulan">
-                    <h4 class="text">"Loyal Brave True(Especial)</h4>
-                    <p class="text--small">
-                        Versão especial da música com Christina Aguilera
-                    </p>
-                </li>
-            </ul>
-            <div data-tab-id="detalhes" class="shows__list">
-                <div class="shows__list__description">
-                    <h3 class="text--big">Mulan</h3>
-                    <p class="text">
-                        Em "Mulan", da Disney, a aclamada cineasta Niki Caro dá vida ao conto épico chinês, no qual uma
-                        jovem destemida arrisca tudo pelo amor à sua família e ao seu país, tornando-se uma das maiores
-                        guerreiras da história da China. Quando o imperador da China decreta que um homem em cada
-                        família deve servir no Exército Imperial e defender o país dos invasores do norte, Hua Mulan, a
-                        filha mais velha de um honrado guerreiro, entra em cena para tomar o lugar do pai doente.
-                        Fazendo-se passar por homem, Hua Jun passa em todos os testes, valendo-se da força interior para
-                        atingir o seu verdadeiro potencial. Esta épica trajetória vai transformá-la numa honrada
-                        guerreira, merecedora do respeito de uma nação imensamente grata… e do orgulho do pai. Algumas
-                        sequências ou padrões de luzes intermitentes podem afetar os telespectadores fotossensíveis.
-                    </p>
-                </div>
-                <div class="shows__list__duration">
-                    <p class="text">Duração</p>
-                    <p class="text--small">1h 58min</p>
-                    <p class="text">Data de lançamento:</p>
-                    <p class="text--small">2020</p>
-                    <p class="text">Gênero</p>
-                    <p class="text--small">Drama, De adolescente a adulto,Fantasia,Ação e Aventura</p>
-                    <p class="text">classsificação:</p>
-                    <img src="/assets/images/12anos.png" alt="classsificação 12 anos">
-                    <p class="text--small">Violência</p>
-                </div>
-                <div class="shows__list__direction">
-                    <p class="text">Direção:</p>
-                    <p class="text--small">Niki Caro</p>
-                    <p class="text">Elenco:</p>
-                    <p class="text--small">Liu Yifei</p>
-                    <p class="text--small">Donnie Yen</p>
-                    <p class="text--small">Gong Li</p>
-                    <p class="text--small">Jet Li</p>
-                    <p class="text--small">Jason Scott Lee</p>
-                    <p class="text--small">Yoson An</p>
-                </div>
-            </div>
-        </section>
-        <!--Page footer -->
-        <footer class="footer">
-            <div class="footer__Container">
-                <img class="footer__logo" src="/assets/images/disneyplus.svg" alt="disney+">
-                <ul class="footer__links">
-                    <li  class="footer__links__item">
-                        <a class="text--small" href="#">Política de Privacidade</a>
-                    </li>
-                    <li  class="footer__links__item">
-                        <a class="text--small" href="#">Proteção de Dados no Brasil</a>
-                    </li>
-                    <li  class="footer__links__item">
-                        <a class="text--small" href="#">Contrato de Assinatura</a>
-                    </li>
-                    <li  class="footer__links__item">
-                        <a class="text--small" href="#">Ajuda</a>
-                    </li>
-                    <li  class="footer__links__item">
-                        <a class="text--small" href="#">Dispositivos compatíveis</a>
-                    </li>
-                    <li  class="footer__links__item">
-                        <a class="text--small" href="#">Sobre a Disney+</a>
-                    </li>
-                    <li  class="footer__links__item">
-                        <a class="text--small" href="#">Anúncios personalizados</a>
-                    </li>
-                </ul>
+        </div>
+    </section>
+    <!-- Shows section -->
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="Sugestoes"
+                class="shows__tabs__buttons shows__tabs__buttons--is-active text--big">Sugestões</button>
+            <button data-tab-button="extras" class="shows__tabs__buttons text--big">Extras</button>
+            <button data-tab-button="detalhes" class="shows__tabs__buttons text--big">Detalhes</button>
+        </nav>
+        <ul data-tab-id="Sugestoes" class="shows__list ">
+            <li class="shows__list__item">
+                <img src="/assets/images/suggestions/Rei leão.jfif" alt="Rei Leão">
+            </li>
+            <li class="shows__list__item">
+                <img src="/assets/images/suggestions/Cinderela.jfif" alt="Cinderela">
+            </li>
+            <li class="shows__list__item">
+                <img src="/assets/images/suggestions/A bela e a Fera.jfif" alt="A Bela e a Fera">
+            </li>
+            <li class="shows__list__item">
+                <img src="/assets/images/suggestions/Aladdin.jfif" alt="Aladdin">
+            </li>
+            <li class="shows__list__item">
+                <img src="/assets/images/suggestions/Mogli - O menino lobo.jfif" alt="Mogli - O menino lobo">
+            </li>
+            <li class="shows__list__item">
+                <img src="/assets/images/suggestions/Mulan.jfif" alt="Mulan">
+            </li>
+        </ul>
+        <ul data-tab-id="extras" class="shows__list">
+            <li class="shows__list__item">
+                <img src="/assets/images/extras/Mulan_trailer.jfif" alt="Trailer Mulan">
+                <h4 class="text">Mulan Trailer</h4>
                 <p class="text--small">
-                    Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é
-                    comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações
-                    Unidas,
-                    12.551, 12.555, 12.559, Piso 10, São Paulo/SP - CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+                    Trailer do filme em inglês
                 </p>
+            </li>
+            <li class="shows__list__item">
+                <img src="/assets/images/extras/Music_Mulan.jfif" alt="Música Mulan">
+                <h4 class="text">"Loyal Brave True"</h4>
                 <p class="text--small">
-                    © Disney. Todos os direitos reservados.
+                    Música oficial com Christina Aguilera
+                </p>
+            </li>
+            <li class="shows__list__item">
+                <img src="/assets/images/extras/filming.jfif" alt="Filmagens">
+                <h4 class="text">Bastidores</h4>
+                <p class="text--small">
+                    Veja a preparação dos atores Jason Scoott Lee e Li Gong
+                </p>
+            </li>
+            <li class="shows__list__item">
+                <img src="/assets/images/extras/Music_Mulan2.jfif" alt="Música 2 de Mulan">
+                <h4 class="text">"Loyal Brave True(Especial)</h4>
+                <p class="text--small">
+                    Versão especial da música com Christina Aguilera
+                </p>
+            </li>
+        </ul>
+        <div data-tab-id="detalhes" class="shows__list">
+            <div class="shows__list__description">
+                <h3 class="text--big">Mulan</h3>
+                <p class="text">
+                    Em "Mulan", da Disney, a aclamada cineasta Niki Caro dá vida ao conto épico chinês, no qual uma
+                    jovem destemida arrisca tudo pelo amor à sua família e ao seu país, tornando-se uma das maiores
+                    guerreiras da história da China. Quando o imperador da China decreta que um homem em cada
+                    família deve servir no Exército Imperial e defender o país dos invasores do norte, Hua Mulan, a
+                    filha mais velha de um honrado guerreiro, entra em cena para tomar o lugar do pai doente.
+                    Fazendo-se passar por homem, Hua Jun passa em todos os testes, valendo-se da força interior para
+                    atingir o seu verdadeiro potencial. Esta épica trajetória vai transformá-la numa honrada
+                    guerreira, merecedora do respeito de uma nação imensamente grata… e do orgulho do pai. Algumas
+                    sequências ou padrões de luzes intermitentes podem afetar os telespectadores fotossensíveis.
                 </p>
             </div>
-        </footer>
-    </div>
+            <div class="shows__list__duration">
+                <p class="text">Duração</p>
+                <p class="text--small">1h 58min</p>
+                <p class="text">Data de lançamento:</p>
+                <p class="text--small">2020</p>
+                <p class="text">Gênero</p>
+                <p class="text--small">Drama, De adolescente a adulto,Fantasia,Ação e Aventura</p>
+                <p class="text">classsificação:</p>
+                <img src="/assets/images/12anos.png" alt="classsificação 12 anos">
+                <p class="text--small">Violência</p>
+            </div>
+            <div class="shows__list__direction">
+                <p class="text">Direção:</p>
+                <p class="text--small">Niki Caro</p>
+                <p class="text">Elenco:</p>
+                <p class="text--small">Liu Yifei</p>
+                <p class="text--small">Donnie Yen</p>
+                <p class="text--small">Gong Li</p>
+                <p class="text--small">Jet Li</p>
+                <p class="text--small">Jason Scott Lee</p>
+                <p class="text--small">Yoson An</p>
+            </div>
+        </div>
+    </section>
+    <!--Page footer -->
+    <footer class="footer">
+        <div class="footer__Container">
+            <img class="footer__logo" src="/assets/images/disneyplus.svg" alt="disney+">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Política de Privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Proteção de Dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Contrato de Assinatura</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Dispositivos compatíveis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Sobre a Disney+</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Anúncios personalizados</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é
+                comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações
+                Unidas,
+                12.551, 12.555, 12.559, Piso 10, São Paulo/SP - CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+            </p>
+            <p class="text--small">
+                © Disney. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
     <script src="/src/scripts/main.js"></script>
 </body>
 

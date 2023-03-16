@@ -1,22 +1,35 @@
 .header {
-    position: fixed;
-    z-index: 1;
-    background-color:transparent;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+        width: 100%;
+    }
 
     &__logo {
         height: 36px;
         padding-left: 36px;
+
+        @media (max-width: 768px) {
+            padding: 0,
+        }
     }
 
     &__container {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         transition: all 2s ease-in-out;
 
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+
         &:hover {
             background-color: rgb(26, 29, 41);
-            transition:all 1s ease;
+            transition: all 1s ease;
         }
 
     }
@@ -29,22 +42,32 @@
         letter-spacing: 1px;
         padding: 16px 18px;
 
+
         &__item a {
             display: flex;
-            text-decoration: none;
             padding: 0 32px;
             text-transform: uppercase;
             border-bottom: 2px solid transparent;
+
+            @media (max-width: 768px) {
+                padding: 8px;
+                margin: 0;
+
+                p {
+                    display: none;
+                }
+            }
 
             &:hover p {
                 border-bottom: 2px solid #f9f9f9;
             }
 
-            i {
+            span {
                 padding-right: 8px;
+                border-bottom: 2px solid transparent;
             }
         }
     }
-
-
 }
+
+

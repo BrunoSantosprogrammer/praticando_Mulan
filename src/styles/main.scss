@@ -24,7 +24,7 @@
 }
 
 $colorTextPrimary: #f9f9f9;
-$colorTextSecondary:#f9f9f9;
+$colorTextSecondary: #f9f9f9;
 $colorTextSmall: #cacaca;
 
 
@@ -33,22 +33,27 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: Avenir ,sans-serif;
+    font-family: Avenir, sans-serif;
+
+    @media (max-width:768px) {
+        background-position: 100%;
+    }
 }
 
-.container {
-    background-image: radial-gradient(farthest-side at 73% 21%, transparent, rgb(26, 29, 41));
-    height: 100%;
-}
-
-@mixin text($fontSize:16px) {
+@mixin text($fontSize: 16px) {
     font-size: $fontSize;
     line-height: $fontSize + 10px;
 }
 
 .text--big {
     @include text(20px);
-    color:$colorTextPrimary;
+    color: $colorTextPrimary;
+
+    
+    @media (max-width:768px) {
+        font-size: 12px;
+        margin: 8px;
+    }
 }
 
 .text {
@@ -58,10 +63,5 @@ body {
 
 .text--small {
     @include text(12px);
-    color:$colorTextSmall;
+    color: $colorTextSmall;
 }
-
-
-
-
-
